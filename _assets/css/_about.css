@@ -1,0 +1,34 @@
+.background-stripe::before {
+  content: '';
+  @apply absolute;
+  @apply bg-pink;
+  width: 150%;
+  height: 20%;
+  bottom: 25%;
+  left: -20%;
+  opacity: 0.5;
+  @apply z-10;
+  transform: rotate(-20deg);
+}
+
+.dark-circle {
+  @apply absolute;
+  display: none;
+  width: 500px;
+  height: 500px;
+}
+
+@screen sm {
+  .dark-circle {
+    display: inline-block;
+    right: -15%;
+    top: 5%;
+  }
+}
+
+@screen xl {
+  .dark-circle {
+    right: 5%;
+    top: 2%;
+  }
+}

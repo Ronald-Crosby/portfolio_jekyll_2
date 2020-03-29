@@ -1,0 +1,10 @@
+<div>projects include</div>
+
+{% assign projects = site.projects | sort: 'order' %}
+{% for project in projects %}
+  {% if project.include != null %}
+    {% include {{ project.include }} %}
+  {% else %}
+    {% include sections/default.html %}
+  {% endif %}
+{% endfor %}

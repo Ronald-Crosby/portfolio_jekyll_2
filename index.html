@@ -1,5 +1,26 @@
 ---
-layout: default
 ---
 
-<h1 class="text-white text-4xl font-semibold">Jekyll Starter Tailwind</h1>
+{% assign sections = site.sections | sort: 'order' %}
+{% for section in sections %}
+  {% if section.include != null %}
+    {% include {{ section.include }} %}
+  {% else %}
+    {% include sections/default.html %}
+  {% endif %}
+{% endfor %}
+
+<p>
+  ----------</p>
+<h3>Posts go below</h3>
+
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <h4>{{ post.title }}</h4>
+    <p>{{ post.excerpt }}</p>
+    <p>read more</p>
+  </a>
+  <p>---</p>
+{% endfor %}
+
+<p>----------</p>

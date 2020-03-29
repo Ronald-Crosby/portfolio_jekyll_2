@@ -1,0 +1,14 @@
+.section--hero {
+  padding-top: 100px;
+  height: 95vh;
+}
+
+.project-row {
+  @apply mb-20;
+}
+
+@screen md {
+  .project-row {
+    margin-bottom: 28rem;
+  }
+}

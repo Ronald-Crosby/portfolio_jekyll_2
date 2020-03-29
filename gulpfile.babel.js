@@ -6,11 +6,15 @@ import postcss from "gulp-postcss";
 import purgecss from "@fullhuman/postcss-purgecss";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
+import concat from "gulp-concat";
+import terser from "gulp-terser";
 
 const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
-const PRE_BUILD_STYLESHEET = "./src/style.css";
+const PRE_BUILD_STYLESHEET = "./_assets/css/style.css";
 const TAILWIND_CONFIG = "./tailwind.config.js";
+const PRE_BUILD_SCRIPT = './_assets/js/**/*.js'
+const POST_BUILD_SCRIPT = `${SITE_ROOT}/assets/js/`;
 
 // Fix for Windows compatibility
 const isWindowsPlatform = process.platform === "win32";
@@ -46,19 +50,27 @@ task("processStyles", () => {
         tailwindcss(TAILWIND_CONFIG),
         ...(!isDevelopmentBuild
           ? [
-              purgecss({
-                content: [`${SITE_ROOT}/**/*.html`],
-                defaultExtractor: content =>
-                  content.match(/[\w-/:]+(?<!:)/g) || []
-              }),
-              autoprefixer(),
-              cssnano()
-            ]
+            purgecss({
+              content: [`${SITE_ROOT}/**/*.html`],
+              defaultExtractor: purgeForTailwind
+            }),
+            autoprefixer(),
+            cssnano()
+          ]
           : [])
       ])
     )
     .pipe(dest(POST_BUILD_STYLESHEET));
 });
+
+task("processScripts", () => {
+  browserSync.notify("Compiling scripts...");
+
+  return src(PRE_BUILD_SCRIPT)
+    .pipe(concat('main.js'))
+    .pipe(terser())
+    .pipe(dest(POST_BUILD_SCRIPT))
+})
 
 task("startServer", () => {
   browserSync.init({
@@ -88,7 +100,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles");
+const buildSite = series("buildJekyll", "processStyles", "processScripts");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);

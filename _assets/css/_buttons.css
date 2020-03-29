@@ -1,0 +1,72 @@
+.button {
+  font-family: 'Merriweather', times, serif;
+  @apply font-bold;
+  line-height: 1.2;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+@screen md {
+  .button {
+    font-size: 18px;
+  }
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 400%;
+  transform: translate(-11%, -20%);
+  transform-origin: center;
+  background-color: transparent;
+}
+
+/* BUTTON HOVER STATES */
+
+.button::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc7db;
+  transition: width 0.3s;
+}
+
+@screen lg {
+  .button:hover::after {
+    width: 0;
+  }
+  .button:hover {
+    color: #ffc7db;
+  }
+}
+
+/* BUTTON INVERT HOVER STATES */
+
+.button--invert::after {
+  width: 0;
+}
+
+@screen lg {
+  .button--invert:hover::after {
+    width: 80%;
+  }
+  .button--invert:hover {
+    color: #ffc7db;
+  }
+}
+
+@screen md {
+  .button--invert:hover::after {
+    width: 80%;
+  }
+
+  .button--invert:hover {
+    color: #ffc7db;
+  }
+}
