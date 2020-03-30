@@ -37,6 +37,10 @@ collections:
     output: false
   projects:
     output: true
+  abouts:
+    output: false
+
+collections_dir: content
 
 defaults:
   -

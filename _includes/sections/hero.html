@@ -1,1 +1,23 @@
-<div>Hero.html include</div>
+<section class="relative z-10 | section section--hero" data-color="bg-purple">
+  <div class="container relative z-20 h-full flex flex-col justify-center">
+    <div class="row">
+      <div class="col w-full lg:w-8/12 xl:w-7/12">
+        <p class="alpha">Hey, I'm
+          <span class="stroke-pink">Olly.</span>
+        </p>
+        <div class="mt-12">
+          <p>{{ section.subtitle }}</p>
+          <div class="pr-8">
+            {{ section.content | strip_newlines }}
+          </div>
+          <div class="mt-10">
+            <a href="{{ section.button_url }}" target="_blank">{{ section.button_label }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col lg:w-4/12 | js-draw">
+        drawing areaaa
+      </div>
+    </div>
+  </div>
+</section>

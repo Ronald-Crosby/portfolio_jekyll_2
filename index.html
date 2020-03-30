@@ -10,17 +10,3 @@
   {% endif %}
 {% endfor %}
 
-<p>
-  ----------</p>
-<h3>Posts go below</h3>
-
-{% for post in site.posts %}
-  <a href="{{ post.url }}">
-    <h4>{{ post.title }}</h4>
-    <p>{{ post.excerpt }}</p>
-    <p>read more</p>
-  </a>
-  <p>---</p>
-{% endfor %}
-
-<p>----------</p>

@@ -2,9 +2,9 @@
 
 {% assign projects = site.projects | sort: 'order' %}
 {% for project in projects %}
-  {% if project.include != null %}
-    {% include {{ project.include }} %}
-  {% else %}
-    {% include sections/default.html %}
-  {% endif %}
+  <div>
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.img_url_1 }}</p>
+    <p>{{ project.live_url }}</p>
+  </div>
 {% endfor %}
