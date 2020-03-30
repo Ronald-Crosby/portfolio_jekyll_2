@@ -44,8 +44,17 @@ collections_dir: content
 
 defaults:
   -
+    scope:
+      path: ""
+      type: "pages"
     values:
       layout: "default"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
