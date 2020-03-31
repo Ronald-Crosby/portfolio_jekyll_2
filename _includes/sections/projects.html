@@ -1,10 +1,19 @@
-<div>projects include</div>
-
-{% assign projects = site.projects | sort: 'order' %}
-{% for project in projects %}
-  <div>
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.img_url_1 }}</p>
-    <p>{{ project.live_url }}</p>
+<section class="py-24 md:pt-24 | section" data-color="bg-grey" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col w-full sm:w-10/12 mb-20 md:mb-48">
+        <h2 class="alpha break-words stroke-blue | js-translateX">
+          Projects
+        </h2>
+      </div>
+    </div>
+    {% assign projects = site.projects | sort: 'order' %}
+    {% for project in projects %}
+      {% if project.include != null %}
+        {% include {{ project.include }} %}
+      {% else %}
+        {% include sections/default.html %}
+      {% endif %}
+    {% endfor %}
   </div>
-{% endfor %}
+</section>
