@@ -1,11 +1,15 @@
 ---
 title: LandTech
-img_url_1: landtech-img-1-url-example
-live_url: landtech-live-url-example
+
+img_url_mobile: /assets/img/landtech-mobile.jpg
+img_desktop_alt: Picture of the landtech.com homepage on a smartphone
+
+img_url_desktop: /assets/img/landtech-desktop.jpg
+img_desktop_alt: Picture of the landtech.com homepage on a desktop
+
+live_url: https://land.tech/
+button_label: View live site
+
 layout: project
 include: project-preview.html
 ---
-
-{{ page.title }}
-This is the LandTech markdown
-hahahahahahahahahahahaha

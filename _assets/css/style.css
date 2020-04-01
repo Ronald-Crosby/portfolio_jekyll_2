@@ -2,7 +2,6 @@
 @import './_grid.css';
 @import './_typography.css';
 @import './_buttons.css';
-@import './_svg.css';
 @import './_header.css';
 @import './_footer.css';
 @import './_hero.css';
@@ -36,3 +35,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.svg-shadow {
+  filter: drop-shadow(20px 10px 50px rgba(0, 0, 0, 0.3));
+}
+

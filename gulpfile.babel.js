@@ -13,8 +13,10 @@ const SITE_ROOT = "./_site";
 const POST_BUILD_STYLESHEET = `${SITE_ROOT}/assets/css/`;
 const PRE_BUILD_STYLESHEET = "./_assets/css/style.css";
 const TAILWIND_CONFIG = "./tailwind.config.js";
-const PRE_BUILD_SCRIPT = './_assets/js/**/*.js'
+const PRE_BUILD_SCRIPT = "./_assets/js/**/*.js";
 const POST_BUILD_SCRIPT = `${SITE_ROOT}/assets/js/`;
+const PRE_BUILD_IMAGES = "./_assets/img/**";
+const POST_BUILD_IMAGES = `${SITE_ROOT}/assets/img/`;
 
 // Fix for Windows compatibility
 const isWindowsPlatform = process.platform === "win32";
@@ -40,8 +42,9 @@ task("buildJekyll", () => {
   return spawn("bundle", args, { stdio: "inherit" });
 });
 
+// styles task inc tailwind
 task("processStyles", () => {
-  browserSync.notify("Compiling styles...");
+  browserSync.notify("Compiling Styles...");
 
   return src(PRE_BUILD_STYLESHEET)
     .pipe(
@@ -63,13 +66,22 @@ task("processStyles", () => {
     .pipe(dest(POST_BUILD_STYLESHEET));
 });
 
+// JS task
 task("processScripts", () => {
-  browserSync.notify("Compiling scripts...");
+  browserSync.notify("Compiling Scripts...");
 
   return src(PRE_BUILD_SCRIPT)
     .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(dest(POST_BUILD_SCRIPT))
+})
+
+// Images task
+task("processImages", () => {
+  browserSync.notify("Processing Images...");
+
+  return src(PRE_BUILD_IMAGES)
+    .pipe(dest(POST_BUILD_IMAGES))
 })
 
 task("startServer", () => {
@@ -100,7 +112,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles", "processScripts");
+const buildSite = series("buildJekyll", "processStyles", "processScripts", "processImages");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
