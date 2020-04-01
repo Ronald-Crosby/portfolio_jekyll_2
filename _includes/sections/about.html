@@ -3,14 +3,14 @@
   <div class="container">
     <div class="row">
       <div class="col w-full mb-20 md:mb-32">
-        <h2 class="alpha stroke-pink relative z-20">
+        <h2 class="h1 z-20">
           {{ section.title }}
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col w-full xl:w-8/12 xl:ml-1/12 z-20">
-        <div class="bg-blue border-solid border-white border-4 rounded-lg p-10 sm:p-16 rounded-xl shadow-2xl | about-box">
+        <div class="bg-blue border-solid border-white border-4 p-10 sm:p-16 shadow-2xl | about-box">
           {% assign abouts = site.abouts | sort: 'order' %}
           {% for about in abouts %}
             {% if about.include != null %}

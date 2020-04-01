@@ -1,15 +1,25 @@
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'IBM Plex Mono';
   font-weight: 400;
-  src: url('../fonts/Merriweather/Merriweather-Regular.woff2') format('woff2'),
-    url('../fonts/Merriweather/Merriweather-Regular.woff') format('woff');
+  font-style: normal;
+  src: url('../fonts/IBMPlexMono/IBMPlexMono-Regular.woff2') format('woff2'),
+    url('../fonts/IBMPlexMono/IBMPlexMono-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'IBM Plex Mono';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/IBMPlexMono/IBMPlexMono-Medium.woff2') format('woff2'),
+    url('../fonts/IBMPlexMono/IBMPlexMono-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
   font-weight: 700;
-  src: url('../fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'),
-    url('../fonts/Merriweather/Merriweather-Bold.woff') format('woff');
+  font-style: italic;
+  src: url('../fonts/IBMPlexSerif/IBMPlexSerif-BoldItalic.woff2') format('woff2'),
+    url('../fonts/IBMPlexSerif/IBMPlexSerif-BoldItalic.woff') format('woff');
 }
 
 html {
@@ -24,7 +34,23 @@ html {
 
 body {
 	@apply text-base;
-	font-family: 'Merriweather', Times, serif;
+	font-family: 'IBM Plex Mono';
 	@apply font-normal;
 	@apply leading-relaxed;
+}
+
+.h1 {
+  font-family: 'IBM Plex Serif', Times, Serif;
+  @apply font-bold;
+  @apply italic;
+  font-size: 10rem;
+  @apply tracking-wide;
+  @apply text-offWhite;
+}
+
+.h2 {
+  font-family: 'IBM Plex Mono';
+  @apply font-medium;
+  font-size: 3rem;
+  @apply text-offWhite;
 }

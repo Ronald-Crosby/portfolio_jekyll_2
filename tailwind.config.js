@@ -12,7 +12,8 @@ module.exports = {
       pink: '#FFC7DB',
       lightBlue: '#00DCFF',
       grey: '#353535',
-      white: '#ffffff',
+      white: '#FFFFFF',
+      offWhite: '#F7EDF1'
     },
     borderRadius: {
       xl: '1rem',
@@ -20,7 +21,7 @@ module.exports = {
     fontSize: {
       'sm': '1.5rem',
       'base': '1.8rem',
-      'lg': '2.4rem',
+      'lg': '2.6rem',
     },
   },
   variants: {},
