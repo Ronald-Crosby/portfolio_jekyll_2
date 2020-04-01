@@ -22,13 +22,12 @@
   .dark-circle {
     display: inline-block;
     right: -15%;
-    top: 5%;
+    top: 0;
   }
 }
 
 @screen xl {
   .dark-circle {
     right: 5%;
-    top: 2%;
   }
 }
