@@ -1,16 +1,6 @@
 .button {
-  font-family: 'Merriweather', times, serif;
-  @apply font-bold;
-  line-height: 1.2;
-  font-size: 14px;
   position: relative;
   transition: color 0.3s;
-}
-
-@screen md {
-  .button {
-    font-size: 18px;
-  }
 }
 
 .button::before {

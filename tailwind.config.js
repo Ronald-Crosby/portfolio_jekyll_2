@@ -17,6 +17,11 @@ module.exports = {
     borderRadius: {
       xl: '1rem',
     },
+    fontSize: {
+      'sm': '1.5rem',
+      'base': '1.8rem',
+      'lg': '2.4rem',
+    },
   },
   variants: {},
   plugins: [],

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 400;
+  src: url('../fonts/Merriweather/Merriweather-Regular.woff2') format('woff2'),
+    url('../fonts/Merriweather/Merriweather-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  src: url('../fonts/Merriweather/Merriweather-Bold.woff2') format('woff2'),
+    url('../fonts/Merriweather/Merriweather-Bold.woff') format('woff');
+}
+
+html {
+	font-size: 50%;
+}
+
+@screen sm {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+	@apply text-base;
+	font-family: 'Merriweather', Times, serif;
+	@apply font-normal;
+	@apply leading-relaxed;
+}

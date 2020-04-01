@@ -17,6 +17,8 @@ const PRE_BUILD_SCRIPT = "./_assets/js/**/*.js";
 const POST_BUILD_SCRIPT = `${SITE_ROOT}/assets/js/`;
 const PRE_BUILD_IMAGES = "./_assets/img/**";
 const POST_BUILD_IMAGES = `${SITE_ROOT}/assets/img/`;
+const PRE_BUILD_FONTS = "./_assets/fonts/**/*";
+const POST_BUILD_FONTS = `${SITE_ROOT}/assets/fonts/`;
 
 // Fix for Windows compatibility
 const isWindowsPlatform = process.platform === "win32";
@@ -84,6 +86,14 @@ task("processImages", () => {
     .pipe(dest(POST_BUILD_IMAGES))
 })
 
+// Fonts task
+task("processFonts", () => {
+  browserSync.notify("Processing Fonts...");
+
+  return src(PRE_BUILD_FONTS)
+    .pipe(dest(POST_BUILD_FONTS))
+})
+
 task("startServer", () => {
   browserSync.init({
     files: [SITE_ROOT + "/**"],
@@ -112,7 +122,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles", "processScripts", "processImages");
+const buildSite = series("buildJekyll", "processStyles", "processScripts", "processImages", "processFonts");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
