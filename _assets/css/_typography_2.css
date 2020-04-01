@@ -1,17 +1,6 @@
 @font-face {
-  font-family: 'IBM Plex Mono';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/IBMPlexMono/IBMPlexMono-Regular.woff2') format('woff2'),
-    url('../fonts/IBMPlexMono/IBMPlexMono-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-weight: 500;
-  font-style: normal;
-  src: url('../fonts/IBMPlexMono/IBMPlexMono-Medium.woff2') format('woff2'),
-    url('../fonts/IBMPlexMono/IBMPlexMono-Medium.woff') format('woff');
+  font-family: 'Fira Code';
+  src: url('../fonts/FiraCode/FiraCode-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
@@ -30,6 +19,14 @@
     url('../fonts/IBMPlexSerif/IBMPlexSerif-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/IBMPlexSerif/IBMPlexSerif-Regular.woff2') format('woff2'),
+    url('../fonts/IBMPlexSerif/IBMPlexSerif-Regular.woff') format('woff');
+}
+
 html {
 	font-size: 50%;
 }
@@ -42,13 +39,12 @@ html {
 
 body {
 	@apply text-base;
-	font-family: 'IBM Plex Mono';
+	font-family: 'Fira Code';
 	@apply font-normal;
   @apply leading-relaxed;
-  letter-spacing: -0.35px;
 }
 
-.h1, .h2, .h3 {
+.h1, .h2 {
   letter-spacing: 0;
 }
 
@@ -62,16 +58,22 @@ body {
 }
 
 .h2 {
-  font-family: 'IBM Plex Mono';
-  @apply font-medium;
+  font-family: 'Fira Code';
+  font-style: normal;
+  @apply font-bold;
   font-size: 3rem;
   @apply text-offWhite;
 }
 
 .h3 {
-  font-family: 'IBM Plex Serif', Times, Serif;
-  font-style: normal;
-  @apply font-bold;
+  font-family: 'Fira Code';
+  @apply font-medium;
   font-size: 3rem;
   @apply text-offWhite;
+  letter-spacing: -0.5px;
+}
+
+.p {
+  font-family: 'IBM Plex Serif', Times, serif;
+  @apply font-normal;
 }
