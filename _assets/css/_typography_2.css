@@ -22,6 +22,14 @@
     url('../fonts/IBMPlexSerif/IBMPlexSerif-BoldItalic.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/IBMPlexSerif/IBMPlexSerif-Bold.woff2') format('woff2'),
+    url('../fonts/IBMPlexSerif/IBMPlexSerif-Bold.woff') format('woff');
+}
+
 html {
 	font-size: 50%;
 }
@@ -36,7 +44,12 @@ body {
 	@apply text-base;
 	font-family: 'IBM Plex Mono';
 	@apply font-normal;
-	@apply leading-relaxed;
+  @apply leading-relaxed;
+  letter-spacing: -0.35px;
+}
+
+.h1, .h2, .h3 {
+  letter-spacing: 0;
 }
 
 .h1 {
@@ -51,6 +64,14 @@ body {
 .h2 {
   font-family: 'IBM Plex Mono';
   @apply font-medium;
+  font-size: 3rem;
+  @apply text-offWhite;
+}
+
+.h3 {
+  font-family: 'IBM Plex Serif', Times, Serif;
+  font-style: normal;
+  @apply font-bold;
   font-size: 3rem;
   @apply text-offWhite;
 }

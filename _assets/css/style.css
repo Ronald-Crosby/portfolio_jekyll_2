@@ -1,11 +1,11 @@
 @import './_tailwind.css';
 @import './_grid.css';
-/*@import './_typography.css';*/
 @import './_typography_2.css';
 @import './_buttons.css';
 @import './_header.css';
 @import './_footer.css';
 @import './_hero.css';
+@import './_projects.css';
 @import './_about.css';
 
 html {

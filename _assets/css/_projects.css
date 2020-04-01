@@ -1,0 +1,9 @@
+.project-row {
+  margin-bottom: 5rem;
+}
+
+@screen md {
+  .project-row {
+    margin-bottom: 35rem;
+  }
+}
