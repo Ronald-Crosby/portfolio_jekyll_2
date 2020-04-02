@@ -18,16 +18,19 @@ body {
 	font-size: 11rem;
 	@apply leading-tight;
 	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 800, 'slnt' -15, 'ital' 1;
+	@apply text-offWhite;
 }
 
 .h2 {
 	font-size: 3.8rem;
 	font-variation-settings: 'MONO' 0.75, 'CASL' 0.35, 'wght' 200, 'slnt' -10, 'ital' 1;
+	@apply text-offWhite;
 }
 
 .h3 {
 	font-size: 2.4rem;
 	font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 700, 'slnt' 0, 'ital' 0;
+	@apply text-offWhite;
 }
 
 .button {
