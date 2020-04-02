@@ -1,5 +1,6 @@
 @import './_tailwind.css';
 @import './_grid.css';
+@import './_animations.css';
 @import './_typography_variable.css';
 @import './_buttons.css';
 @import './_header.css';
@@ -45,9 +46,8 @@ body {
   @apply bg-lightBlue; 
   @apply text-pink;
   }
-  
-  ::selection {
-    @apply bg-lightBlue; 
-    @apply text-pink;
-  }
 
+::selection {
+  @apply bg-lightBlue; 
+  @apply text-pink;
+}

@@ -22,26 +22,3 @@ header .header-logo.animate-logo {
   animation-timing-function: cubic-bezier(.63,-0.02,.8,1.39);
   animation-iteration-count: 1;
 }
-
-@keyframes logo-grow {
-	0% {
-		transform: scale(0, 0);
-		opacity: 0;
-	}
-	50% {
-		transform: scale(0, 0);
-	}
-	100% {
-		transform: scale(100%, 100%);
-		opacity: 1;
-	}
-}
-
-@keyframes animate-logo {
-	0% {
-		font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' 800, 'slnt' -15, 'ital' 1;
-	}
-	100% {
-		font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 200, 'slnt' -15, 'ital' 1;
-	}
-}

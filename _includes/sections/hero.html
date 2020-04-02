@@ -2,12 +2,12 @@
   <div class="container relative z-20 h-full flex flex-col justify-center">
     <div class="row">
       <div class="col w-full lg:w-8/12 xl:w-7/12">
-        <p class="h1 mb-12 | hero-h1">Hi, I'm Olly</p>
+        <p class="h1 mb-12 | hero-h1 js-fadeIn">Hi, I'm Olly</p>
         <div class="hero-text pr-40">
-          {{ section.content | strip_newlines }}
-          <p class="py-2 px-4 bg-offWhite text-purple">{{ section.highlighted_message }}</p>
+          <p class="js-fadeIn">{{ section.content }}</p>
+          <p class="py-2 px-4 bg-offWhite text-purple | js-fadeIn">{{ section.highlighted_message }}</p>
         </div>
-        <div class="mt-12">
+        <div class="mt-12 | js-fadeIn">
           <a href="{{ section.button_url }}" class="button" target="_blank">{{ section.button_label }}</a>
         </div>
         </div>
