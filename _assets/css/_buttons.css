@@ -1,6 +1,8 @@
 .button {
+  font-family: 'Recursive';
+	font-variation-settings: 'MONO' 0.5, 'CASL' 0, 'wght' 400, 'slnt' 0, 'ital' 0;
   position: relative;
-  transition: color 0.3s;
+  transition: color 0.3s, font-variation-settings 1s, letter-spacing 1s;
 }
 
 .button::before {
@@ -33,6 +35,8 @@
   }
   .button:hover {
     color: #ffc7db;
+    font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' 700, 'slnt' 0, 'ital' 0;
+    letter-spacing: -0.5px;
   }
 }
 
