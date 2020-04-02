@@ -1,6 +1,7 @@
 @import './_tailwind.css';
 @import './_grid.css';
-@import './_typography_2.css';
+/*@import './_typography_2.css';*/
+@import './_typography_variable.css';
 @import './_buttons.css';
 @import './_header.css';
 @import './_footer.css';

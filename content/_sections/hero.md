@@ -7,4 +7,7 @@ button_label: Get in touch
 button_url: /
 ---
 
-Dolore occaecat cupidatat irure laboris commodo laborum ut. Qui deserunt ea sit voluptate ea magna excepteur enim et occaecat dolor officia sint. Ullamco pariatur esse ex ex sit veniam tempor commodo.
+I'm a front-end developer based in London. I can build accessible, beautiful user experiences for the web. Right now I'm working on a new project management platform for UK-based architects [Resi](https://resi.co.uk/). 
+
+Due to the Coronavirus crisis I am available for freelance projects. Get in touch if you want to build something cool.
+

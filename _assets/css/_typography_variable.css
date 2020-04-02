@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Recursive';
+  src: url('../fonts/Recursive/Recursive_VF_1.043--subset-GF_latin_basic.woff2') format('woff2');
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Recursive';
+	font-variation-settings: 'MONO' 0.5, 'CASL' 0, 'wght' 400, 'slnt' 0, 'ital' 0;
+	letter-spacing: -0.01rem;
+}
+
+.h1 {
+	font-size: 11rem;
+	@apply leading-tight;
+	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 800, 'slnt' -15, 'ital' 1;
+}
+
+.h2 {
+	font-size: 3.8rem;
+	font-variation-settings: 'MONO' 0.75, 'CASL' 0.35, 'wght' 200, 'slnt' -10, 'ital' 1;
+}
+
+.h3 {
+	font-size: 2.4rem;
+	font-variation-settings: 'MONO' 0, 'CASL' 0.5, 'wght' 700, 'slnt' 0, 'ital' 0;
+}
+
+.button {
+	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 500, 'slnt' 0, 'ital' 1;
+}
