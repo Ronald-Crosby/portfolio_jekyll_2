@@ -1,19 +1,12 @@
-@screen lg {
-  .hover-fill-text::after {
-    content: attr(data-text);
-    position: absolute;
-    @apply inset-0;
-    top: 12px;
-    @apply w-full;
-    @apply h-full;
-    -webkit-text-fill-color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+.footer-link {
+  font-variation-settings: 'MONO' 0.75, 'CASL' 0.35, 'wght' 200, 'slnt' -10, 'ital' 1;
+  transition: font-variation-settings 0.5s ease, letter-spacing 0.5s ease, color 0.5s ease;
 }
 
 @screen md {
-  .hover-fill-text:hover.hover-fill-text::after {
-    opacity: 1;
+  .footer-link:hover {
+    font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 900, 'slnt' -10, 'ital' 1;
+    letter-spacing: 0.1rem;
+    @apply text-pink;
   }
 }
