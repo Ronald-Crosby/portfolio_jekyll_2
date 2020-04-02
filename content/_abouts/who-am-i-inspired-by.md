@@ -1,6 +1,7 @@
 ---
 title: Who am I inspired by?
 include: abouts.html
+order: 3
 ---
 
 For me, the most rewarding aspect for front-end development is collaborating with UX and UI designers; I enjoy creating

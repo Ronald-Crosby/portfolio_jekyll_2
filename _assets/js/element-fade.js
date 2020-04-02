@@ -7,16 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 	const fadeIn = function () {
-		let delay = 0
+		let delay = 0.1
 
 		animatedTags.forEach(tag => {
 			const tagTop = tag.getBoundingClientRect().top
 			const tagBottom = tag.getBoundingClientRect().bottom
 
-			if (tagTop < window.innerHeight) {
-				tag.style.animation = `fadeIn 1s ${delay}s both`
+			if (tagTop < (window.innerHeight + 150) && tagBottom > -300) {
+				tag.style.animation = `fadeIn 0.5s ${delay}s both`
+			} else {
+				tag.style.opacity = 0
+				tag.style.animation = ''
 			}
-			delay = delay + 0.3
+
+			delay = delay + 0.1
+			if (delay > 0.5) { delay = 0 }
 		})
 	}
 

@@ -1,6 +1,7 @@
 ---
 title: Why Front-end?
 include: abouts.html
+order: 1
 ---
 
 For me, the most rewarding aspect for front-end development is collaborating with UX and UI designers; I enjoy creating
