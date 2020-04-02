@@ -1,7 +1,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -9,25 +9,11 @@
   }
 }
 
-@keyframes logo-grow {
-	0% {
-		transform: scale(0, 0);
-		opacity: 0;
-	}
-	50% {
-		transform: scale(0, 0);
-	}
-	100% {
-		transform: scale(100%, 100%);
-		opacity: 1;
-	}
-}
-
 @keyframes animate-logo {
 	0% {
-		font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' 800, 'slnt' -15, 'ital' 1;
+		font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' 800, 'slnt' -5, 'ital' 1;
 	}
 	100% {
-		font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 200, 'slnt' -15, 'ital' 1;
+		font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 200, 'slnt' -5, 'ital' 1;
 	}
 }

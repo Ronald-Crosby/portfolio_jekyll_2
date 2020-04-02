@@ -6,19 +6,11 @@
 	top: -15%;
 }
 
-header .header-logo.animate-logo {
+.animate-logo {
 	/* animate logo */
 	animation-name: animate-logo;
   animation-duration: 6s; 
   animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-}
-
-.logo-grow {
-	/* Logo grow on page load */
-	animation-name: logo-grow;
-  animation-duration: 2s; 
-  animation-timing-function: cubic-bezier(.63,-0.02,.8,1.39);
-  animation-iteration-count: 1;
 }
