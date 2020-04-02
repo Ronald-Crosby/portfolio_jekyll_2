@@ -1,9 +1,17 @@
 .logo-outer {
-	min-width: 300px;
+	min-width: 170px;
 }
 
-.header-logo {
-	top: -15%;
+@screen md {
+	.logo-outer {
+		min-width: 300px;
+	}
+}
+
+@screen md {
+	.header-logo {
+		top: -15%;
+	}
 }
 
 .animate-logo {

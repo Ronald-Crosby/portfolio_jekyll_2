@@ -4,7 +4,19 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 50%;
+}
+
+@screen sm {
+	html {
+		font-size: 57.5%;
+	}
+}
+
+@screen md {
+	html {
+		font-size: 62.5%;
+	}
 }
 
 body {
@@ -15,17 +27,30 @@ body {
 }
 
 .h1 {
-	font-size: 11rem;
+	font-size: 6rem;
 	@apply leading-tight;
 	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 800, 'slnt' -15, 'ital' 1;
-	@apply text-offWhite;
+	@apply text-offWhite;	
+}
+
+@screen md {
+	.h1 {
+		font-size: 11rem;
+	}
 }
 
 .h2 {
-	font-size: 3.8rem;
+	font-size: 3rem;
 	font-variation-settings: 'MONO' 0.75, 'CASL' 0.35, 'wght' 200, 'slnt' -10, 'ital' 1;
 	@apply text-offWhite;
 }
+
+@screen md {
+	.h2 {
+		font-size: 3.8rem;
+	}
+}
+
 
 .h3 {
 	font-size: 2.4rem;
