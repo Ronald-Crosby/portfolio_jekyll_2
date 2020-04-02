@@ -2,6 +2,10 @@
 	min-width: 300px;
 }
 
+.header-logo {
+	top: -15%;
+}
+
 header .header-logo.animate-logo {
 	/* animate logo */
 	animation-name: animate-logo;
