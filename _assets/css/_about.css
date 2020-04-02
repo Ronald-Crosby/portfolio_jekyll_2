@@ -1,4 +1,4 @@
-.background-stripe::before {
+/*.background-stripe::before {
   content: '';
   @apply absolute;
   @apply bg-pink;
@@ -9,7 +9,7 @@
   opacity: 0.5;
   @apply z-10;
   transform: rotate(-20deg);
-}
+}*/
 
 .dark-circle {
   @apply absolute;

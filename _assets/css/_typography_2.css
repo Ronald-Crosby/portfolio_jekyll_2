@@ -55,6 +55,7 @@ body {
   font-size: 10rem;
   @apply tracking-wide;
   @apply text-offWhite;
+  @apply leading-tight;
 }
 
 .h2 {
