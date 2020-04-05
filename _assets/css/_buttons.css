@@ -17,7 +17,7 @@
 
 /* BUTTON HOVER STATES */
 
-.button::after {
+.button-hoverEffect::after {
   content: '';
   position: absolute;
   width: 80%;
@@ -30,10 +30,10 @@
 }
 
 @screen lg {
-  .button:hover::after {
+  .button-hoverEffect:hover::after {
     width: 0;
   }
-  .button:hover {
+  .button-hoverEffect:hover {
     color: #ffc7db;
     font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' 700, 'slnt' 0, 'ital' 0;
     letter-spacing: -0.5px;

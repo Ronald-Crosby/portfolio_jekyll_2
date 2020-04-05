@@ -1,7 +1,7 @@
-<header class="w-full absolute top-0 left-0 right-0 px-4 z-20 border-b-2 border-offWhite">
+<header class="w-full fixed top-0 left-0 right-0 px-4 z-30 border-b-2 border-offWhite bg-purple | globalHeader">
   <div class="container">
     <div class="row">
-      <div class="col w-full flex justify-between items-center w-full py-10 md:py-16">
+      <div class="col w-full flex justify-between items-center w-full py-10 md:py-16 | headerCol">
         <div class="relative h-full | logo-outer">
           <a href="{{ site.url }}" class="block h-full | js-fadeIn">
             <h1 class="h2 absolute left-0 | header-logo animate-logo">
@@ -11,14 +11,14 @@
         </div>
         <nav>
           <ul class="flex">
-            <li class="hidden md:inline py-3 px-8 | js-fadeIn">
-              <a class="button button--invert" href="#projects">Projects</a>
+            <li class="hidden md:inline px-8 | js-fadeIn">
+              <a class="button button-hoverEffect button--invert" href="#projects">Projects</a>
             </li>
-            <li class="hidden md:inline py-3 px-8 | js-fadeIn">
-              <a class="button button--invert" href="#about">About</a>
+            <li class="hidden md:inline px-8 | js-fadeIn">
+              <a class="button button-hoverEffect button--invert" href="#about">About</a>
             </li>
-            <li class="py-3 md:px-8 | js-fadeIn">
-              <a class="button" href="#contact">Get in touch</a>
+            <li class="md:px-8 | js-fadeIn">
+              <a class="button button-hoverEffect" href="#contact">Get in touch</a>
             </li>
           </ul>
         </nav>
