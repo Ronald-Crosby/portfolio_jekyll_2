@@ -24,6 +24,7 @@
 }
 
 /* sticky header stuff */
+/* purgecss start ignore */
 
 .headerCol {
 	transition: padding 0.5s ease;
@@ -33,4 +34,6 @@
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+
+/* purgecss end ignore */
 
