@@ -30,13 +30,14 @@
 }
 
 @screen lg {
-  .button-hoverEffect:hover::after {
-    width: 0;
-  }
-  .button-hoverEffect:hover {
+  .button:hover {
     color: #ffc7db;
     font-variation-settings: 'MONO' 1, 'CASL' 0, 'wght' 700, 'slnt' 0, 'ital' 0;
     letter-spacing: -0.5px;
+  }
+  
+  .button-hoverEffect:hover::after {
+    width: 0;
   }
 }
 
@@ -50,17 +51,10 @@
   .button--invert:hover::after {
     width: 80%;
   }
-  .button--invert:hover {
-    color: #ffc7db;
-  }
 }
 
 @screen md {
   .button--invert:hover::after {
     width: 80%;
-  }
-
-  .button--invert:hover {
-    color: #ffc7db;
   }
 }
