@@ -1,6 +1,6 @@
 <div
   class="{% if project.reverse %}md:flex-row-reverse {% else %}md:flex-row {% endif %}flex-col-reverse row | project-row">
-  <div class="col w-full md:w-3/12 xl:w-2/12 z-10 mb-16 mt-12 lg:mt-0">
+  <div class="col w-full md:w-3/12 xl:w-2/12 z-10 mb-16 mt-12 lg:mt-0 {% if.project.reverse %}text-right {% endif %}">
     <h3 class="h3 mb-6 break-words | js-fadeIn">
       {{ project.title }}
     </h3>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div
-    class="col w-full md:w-9/12 lg:w-7/12 xl:w-8/12 {% if project.reverse %}lg:-mr-1/12{% else %}lg:-ml-1/12{% endif %} md:-mt-16 | js-fadeIn">
+    class="col w-full md:w-9/12 lg:w-7/12 {% if project.reverse %}lg:-mr-1/12{% else %}lg:-ml-1/12{% endif %} md:-mt-16 | js-fadeIn">
     <div
       class="relative w-full overflow-hidden border-4 border-offWhite rounded-xl shadow-2xl | js-parallax parallax-scroll"
       data-parallax="-0.1" style="padding-top:71.0709318498%;">
