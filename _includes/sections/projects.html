@@ -1,4 +1,4 @@
-<section class="md:pt-24 | section" data-color="bg-grey" id="projects">
+<section class="md:pt-24 | section" data-color="bg-grey" data-sectionName="projects" id="projects">
   <div class="container">
     <div class="row">
       <div class="col w-full sm:w-10/12 mb-20 md:mb-64">
@@ -9,11 +9,11 @@
     </div>
     {% assign projects = site.projects | sort: 'order' %}
     {% for project in projects %}
-      {% if project.include != null %}
-        {% include {{ project.include }} %}
-      {% else %}
-        {% include sections/default.html %}
-      {% endif %}
+    {% if project.include != null %}
+    {% include {{ project.include }} %}
+    {% else %}
+    {% include sections/default.html %}
+    {% endif %}
     {% endfor %}
   </div>
 </section>

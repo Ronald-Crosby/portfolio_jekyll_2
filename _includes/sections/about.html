@@ -1,5 +1,5 @@
 <section class="relative pb-20 md:pb-56 overflow-hidden | section background-stripe" data-color="bg-blue" id="about">
-  <img class="dark-circle" src="{{ site.base_url }}{{ section.image_url }}"/>
+  <img class="dark-circle" src="{{ site.base_url }}{{ section.image_url }}" />
   <div class="container">
     <div class="row">
       <div class="col w-full mb-20 md:mb-48">
@@ -10,14 +10,15 @@
     </div>
     <div class="row">
       <div class="col w-full lg:w-8/12 xl:ml-1/12 z-20">
-        <div class="bg-blue rounded-xl border-solid border-offWhite border-4 pt-10 px-10 sm:pt-16 sm:px-16 shadow-2xl | about-box js-fadeIn">
+        <div
+          class="bg-blue rounded-xl border-solid border-offWhite border-4 pt-10 px-10 sm:pt-16 sm:px-16 shadow-2xl | about-box js-fadeIn">
           {% assign abouts = site.abouts | sort: 'order' %}
           {% for about in abouts %}
-            {% if about.include != null %}
-              {% include {{ about.include }} %}
-            {% else %}
-              {% include sections/default.html %}
-            {% endif %}
+          {% if about.include != null %}
+          {% include {{ about.include }} %}
+          {% else %}
+          {% include sections/default.html %}
+          {% endif %}
           {% endfor %}
         </div>
       </div>
