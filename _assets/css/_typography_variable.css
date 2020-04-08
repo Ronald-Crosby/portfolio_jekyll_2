@@ -27,7 +27,7 @@ body {
 }
 
 .h1 {
-	font-size: 6rem;
+	font-size: 9rem;
 	@apply leading-tight;
 	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 800, 'slnt' -15, 'ital' 1;
 	@apply text-offWhite;	

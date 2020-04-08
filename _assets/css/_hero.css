@@ -1,14 +1,24 @@
 .section--hero {
   padding-top: 100px;
-  margin-bottom: 20vh;
 }
 
-.hero--text-section {
-  margin-bottom: 60vh;
+@screen lg {
+  .section--hero {
+    margin-bottom: 20vh;
+  }
+}
+
+.hero--text-section * + * {
+  margin-top: 4rem;
+}
+
+@screen lg {
+  .hero--text-section * + * {
+    margin-top: 60vh;
+  }
 }
 
 .hero--image {
   position: sticky;
   top: 30%;
-  
 }
