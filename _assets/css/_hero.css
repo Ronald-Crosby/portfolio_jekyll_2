@@ -1,8 +1,14 @@
 .section--hero {
   padding-top: 100px;
-  height: 100vh;
+  margin-bottom: 20vh;
 }
 
-.hero-text * + * {
-  margin-top: 1.2rem;
+.hero--text-section {
+  margin-bottom: 60vh;
+}
+
+.hero--image {
+  position: sticky;
+  top: 30%;
+  
 }

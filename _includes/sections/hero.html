@@ -1,16 +1,30 @@
 <section class="relative z-10 | section section--hero" data-color="bg-purple" id="hero">
-  <div class="container relative z-20 h-full flex flex-col justify-center">
+  <div class="container relative z-20 h-full">
     <div class="row">
-      <div class="col w-full lg:w-8/12 xl:w-7/12">
-        <p class="h1 mb-12 | hero-h1 js-fadeIn">Hi, I'm Olly</p>
-        <div class="hero-text md:pr-40">
-          <p class="js-fadeIn">{{ section.content }}</p>
-          <p class="py-2 px-4 bg-offWhite text-purple | js-fadeIn">{{ section.highlighted_message }}</p>
+      <div class="col w-full lg:w-7/12 xl:w-6/12">
+
+        <div class="hero--text-section hero--greeting">
+          <p class="h1 mb-12 | hero-h1 js-fadeIn">Hi, I'm Olly</p>
         </div>
-        <div class="mt-12 | js-fadeIn">
+
+        <div class="hero--text-section h2 js-fadeIn">
+          {{ section.content }}
+        </div>
+
+        <div class="hero--text-section h2 js-fadeIn">
+          {{ section.content }}
+        </div>
+
+        <!--<p class="py-2 px-4 bg-offWhite text-purple | js-fadeIn">{{ section.highlighted_message }}</p>-->
+
+        <!--<div class="mt-12 | js-fadeIn">
           <a href="{{ section.button_url }}" class="button button-hoverEffect"
             target="_blank">{{ section.button_label }}</a>
-        </div>
+        </div>-->
+
+      </div>
+      <div class="col lg:w-4/12 xl:w-5/12 ml-1/12">
+        <div class="w-full bg-pink | hero--image" style="padding-top: 70%"></div>
       </div>
     </div>
   </div>
