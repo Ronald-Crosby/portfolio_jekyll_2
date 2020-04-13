@@ -1,4 +1,4 @@
-<section class="md:pt-24 | section" data-color="bg-grey" data-sectionname="superhi" id="superhi">
+<section class="md:pt-24 md:pb-56 | section" data-color="bg-grey" data-sectionname="superhi" id="superhi">
   <div class="container">
     <div class="row">
       <div class="col w-full xl:w-10/12 mb-20 lg:mb-32">
@@ -12,7 +12,7 @@
         <p>I built these sites during courses created by SuperHi, an online creative and technology education startup. They represent some of the skills I have developed and technologies I’m interested in.</p>
       </div>
       <div class="col w-full lg:w-5/12 text-right">
-        <h4 class="h3 mb-6">Courses Completed</h4>
+        <h3 class="h3 mb-6">Courses Completed</h3>
         <ul>
           {% assign courses = site.superhi_courses | sort: 'order' %}
           {% for course in courses %}
@@ -23,5 +23,21 @@
         </ul>
       </div>
     </div>
+  </div>
+  <div class="superhi-carousel mt-4">
+    {% assign sites = site.superhi_sites %}
+    {% for site in sites %}
+      <div class="carousel-cell w-4/12">
+        <div class="border-4 rounded-xl bg-purple overflow-hidden">
+          <div class="relative w-full h-0 bg-purple overflow-hidden" style="padding-bottom: 50%;">
+            <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full" src="{{ site.baseurl }}{{ site.img }}"/>
+          </div>
+          <div class="p-8">
+            <h4 class="h3 mb-16">{{ site.title }}</h4>
+            <p>{{ site.course }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>

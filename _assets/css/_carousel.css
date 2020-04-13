@@ -1,0 +1,7 @@
+.flickity-slider .carousel-cell {
+  margin-left: 20px;
+}
+
+.flickity-slider .carousel-cell:first-child {
+  margin-left: 0;
+}

@@ -8,6 +8,7 @@
 @import './_hero.css';
 @import './_projects.css';
 @import './_about.css';
+@import './_carousel.css';
 
 html {
   scroll-behavior: smooth;
@@ -33,21 +34,16 @@ body {
   transition: background-color 0.5s linear;
 }
 
-.section {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .svg-shadow {
   filter: drop-shadow(20px 10px 50px rgba(0, 0, 0, 0.3));
 }
 
-::-moz-selection { 
-  @apply bg-lightBlue; 
+::-moz-selection {
+  @apply bg-lightBlue;
   @apply text-pink;
-  }
+}
 
 ::selection {
-  @apply bg-lightBlue; 
+  @apply bg-lightBlue;
   @apply text-pink;
 }
