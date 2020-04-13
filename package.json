@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-starter-tailwind",
+  "name": "olly-robinson",
   "version": "6.0.0",
-  "description": "A starter kit for using Tailwind with Jekyll",
+  "description": "Olly Robinson's portfolio. Front-end coder and UI Developer",
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "2.1.0",
@@ -15,6 +15,7 @@
     "gulp-postcss": "8.0.0",
     "gulp-terser": "^1.2.0",
     "postcss-import": "12.0.1",
+    "prettier": "2.0.4",
     "tailwindcss": "1.2.0"
   },
   "scripts": {
@@ -26,14 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
-  },
-  "author": "Taylor Bryant",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
+    "url": "https://github.com/Ronald-Crosby/portfolio_jekyll_2"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
   }
 }

@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: A Night in Japan
+title: Olly Robinson
 email: ollythedeveloper@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about Japan
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Olly Robinson's portfolio. Front-end coder and UI Developer
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: olly_robinson
-github_username:  Ronald-Crosby
+github_username: Ronald-Crosby
 
 # Build settings
 plugins:
@@ -39,22 +39,24 @@ collections:
     output: true
   abouts:
     output: false
+  superhi_sites:
+    output: false
+  superhi_courses:
+    output: false
 
 collections_dir: content
 
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
+  - scope:
+      path: ''
+      type: 'pages'
     values:
-      layout: "default"
-  -
-    scope:
-      path: "projects"
-      type: "pages"
+      layout: 'default'
+  - scope:
+      path: 'projects'
+      type: 'pages'
     values:
-      layout: "project"
+      layout: 'project'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -75,4 +77,3 @@ exclude:
   - README.md
   - src
   - tailwind.config.js
-

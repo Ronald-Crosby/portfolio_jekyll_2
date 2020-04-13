@@ -1,0 +1,27 @@
+<section class="md:pt-24 | section" data-color="bg-grey" data-sectionname="superhi" id="superhi">
+  <div class="container">
+    <div class="row">
+      <div class="col w-full xl:w-10/12 mb-20 lg:mb-32">
+        <h2 class="h1 break-words | js-fadeIn">
+          {{ section.title }}
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col w-full lg:w-6/12">
+        <p>I built these sites during courses created by SuperHi, an online creative and technology education startup. They represent some of the skills I have developed and technologies I’m interested in.</p>
+      </div>
+      <div class="col w-full lg:w-5/12 text-right">
+        <h4 class="h3 mb-6">Courses Completed</h4>
+        <ul>
+          {% assign courses = site.superhi_courses | sort: 'order' %}
+          {% for course in courses %}
+            <li class="pb-1">
+              <a href="{{ course.url }}" target="_blank" class="button">{{ course.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
