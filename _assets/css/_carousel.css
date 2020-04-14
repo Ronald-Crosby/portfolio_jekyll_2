@@ -5,3 +5,7 @@
 .flickity-slider .carousel-cell:first-child {
   margin-left: 0;
 }
+
+.carousel-box {
+  min-height: 32rem;
+}

@@ -1,4 +1,4 @@
 ---
 title: React.js
-url: https://www.superhi.com/courses/react-javascript
+sh_url: react-javascript
 ---

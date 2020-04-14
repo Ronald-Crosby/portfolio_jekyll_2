@@ -1,7 +1,7 @@
 ---
-title: Caroline Wade
-course: Experimental Typography for the Web
-img: /assets/img/wade.jpg
+title: MapBox Search
+course: React.js
+img: /assets/img/mapbox.jpg
 img_alt: alt
 url: url
 ---

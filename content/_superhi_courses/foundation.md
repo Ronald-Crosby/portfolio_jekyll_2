@@ -1,4 +1,4 @@
 ---
 title: Foundation HTML, CSS and JavaScript
-url: https://www.superhi.com/courses/html-css-javascript-foundation
+sh_url: html-css-javascript-foundation
 ---

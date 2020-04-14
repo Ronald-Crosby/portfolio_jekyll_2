@@ -1,4 +1,4 @@
 ---
 title: AJAX & APIs
-url: https://www.superhi.com/courses/ajax-and-apis
+sh_url: ajax-and-apis
 ---

@@ -1,4 +1,4 @@
 ---
 title: JavaScript for Designers
-url: https://www.superhi.com/courses/javascript-for-designers
+sh_url: javascript-for-designers
 ---
