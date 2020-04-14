@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 .flickity-slider .carousel-cell {
   margin-left: 20px;
 }
@@ -9,3 +11,5 @@
 .carousel-box {
   min-height: 32rem;
 }
+
+/* purgecss end ignore */
