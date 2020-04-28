@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
   const backgroundTag = document.getElementById('background')
-  const colorSections = document.querySelectorAll('[data-color]')
+  const colorSections = document.querySelectorAll('[data-bg-color]')
 
   let colorSectionData = []
 
   colorSections.forEach(section => {
     colorSectionData.push({
       offset: parseInt(section.getBoundingClientRect().top + window.pageYOffset),
-      classes: section.getAttribute('data-color'),
+      classes: section.getAttribute('data-bg-color'),
     })
   })
 
