@@ -9,18 +9,12 @@
         </a>
         <nav class="header-nav">
           <ul class="flex">
+            {% assign navLinks = site.sections | sort: 'order' %}
+            {% for link in navLinks %}
             <li class="hidden md:inline px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="projects" href="#projects">Projects</a>
+              <a class="button button-hoverEffect button--invert" data-id="{{ link.title | downcase }}" href="#{{ link.title | downcase }}">{{ link.title }}</a>
             </li>
-            <li class="hidden md:inline px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="superhi" href="#superhi">SuperHi</a>
-            </li>
-            <li class="hidden md:inline px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="about" href="#about">About</a>
-            </li>
-            <li class="md:pl-8 | js-fadeIn">
-              <a class="button button-hoverEffect" data-id="contact" href="#contact">Get in touch</a>
-            </li>
+            {% endfor %}
           </ul>
         </nav>
       </div>
