@@ -4,4 +4,5 @@ intro: I built these sites during courses created by SuperHi, an online creative
 include: sections/superhi.html
 order: 3
 showNav: true
+machineName: superhi
 ---

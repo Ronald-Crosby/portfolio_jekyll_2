@@ -13,7 +13,7 @@
             {% for link in navLinks %}
             {% if link.showNav %}
             <li class="hidden md:inline px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="{{ link.title | downcase }}" href="#{{ link.title | downcase }}">{{ link.title }}</a>
+              <a class="button button-hoverEffect button--invert" data-id="{{ link.machineName }}" href="#{{ link.machineName }}">{{ link.title }}</a>
             </li>
             {% endif %}
             {% endfor %}
