@@ -15,6 +15,11 @@
   background-color: transparent;
 }
 
+.superhi-courses .button::before {
+  content: '';
+  display: none;
+}
+
 /* BUTTON HOVER STATES */
 
 .button-hoverEffect::after {

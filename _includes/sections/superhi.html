@@ -13,10 +13,10 @@
       </div>
       <div class="col w-full md:w-6/12 lg:w-5/12 md:text-right | js-fadeIn">
         <h3 class="h3 mb-6">Courses Completed</h3>
-        <ul>
+        <ul class="superhi-courses">
           {% assign courses = site.superhi_courses | sort: 'order' %}
           {% for course in courses %}
-            <li class="pb-1">
+            <li class="my-1">
               <a href="https://www.superhi.com/courses/{{ course.sh_url }}" target="_blank" class="button">{{ course.title }}</a>
             </li>
           {% endfor %}
@@ -33,7 +33,9 @@
             <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="{{ site.baseurl }}{{ site.img }}"/>
           </div>
           <div class="p-8 flex-1 flex flex-col justify-between">
-            <h4 class="h3 mb-auto">{{ site.title }}</h4>
+            <h4 class="h3 mb-auto">
+              <a href="{{ site.external_url }}" target="_blank">{{ site.title }}</a>
+            </h4>
             <p>{{ site.course }}</p>
           </div>
         </div>
