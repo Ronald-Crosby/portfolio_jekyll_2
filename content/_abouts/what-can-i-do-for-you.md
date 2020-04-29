@@ -3,6 +3,4 @@ title: What can I do for you?
 include: abouts.html
 order: 4
 ---
-
-For me, the most rewarding aspect for front-end development is collaborating with UX and UI designers; I enjoy creating
-impactful, clear user experiences and I find their insight during the development phase informs and shapes implementation. I firmly believe there is no such thing as developer handoff.
+I can build performant, maintainable user interfaces, I can troubleshoot and solve bugs in existing sites, I can bring an ambitious, forward-thinking attitude to your development process, but most importantly I can evangelise about public transport.

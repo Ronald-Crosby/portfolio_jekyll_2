@@ -1,21 +1,12 @@
-/*.background-stripe::before {
-  content: '';
-  @apply absolute;
-  @apply bg-pink;
-  width: 150%;
-  height: 20%;
-  bottom: 25%;
-  left: -20%;
-  opacity: 0.5;
-  @apply z-10;
-  transform: rotate(-20deg);
-}*/
-
 .dark-circle {
   @apply absolute;
   display: none;
   width: 500px;
   height: 500px;
+}
+
+.about p + p {
+  margin-top: 1rem;
 }
 
 @screen sm {
