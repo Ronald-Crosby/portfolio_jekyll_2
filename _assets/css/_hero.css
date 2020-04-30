@@ -1,6 +1,12 @@
 .section--hero {
   padding-top: 100px;
-  height: 100vh;
+  padding-bottom: 100px;
+}
+
+@screen xl {
+  .section--hero {
+    min-height: 100vh;
+  }
 }
 
 .hero-text * + * {
