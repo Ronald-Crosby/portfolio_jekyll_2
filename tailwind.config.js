@@ -2,8 +2,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        'screen-y': '100vh',
-        'screen-x': '100vw',
+        '72': '18rem',
+        '80': '20rem'
       },
     },
     colors: {
