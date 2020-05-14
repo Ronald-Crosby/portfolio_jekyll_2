@@ -11,3 +11,8 @@
 .hero-text * + * {
   margin-top: 1.2rem;
 }
+
+.hero-illustration {
+  padding-top: 140.0621118012%;
+  height: 0;
+}

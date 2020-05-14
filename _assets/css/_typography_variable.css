@@ -35,6 +35,12 @@ body {
 
 @screen md {
 	.h1 {
+		font-size: 9rem;
+	}
+}
+
+@screen xl {
+	.h1 {
 		font-size: 11rem;
 	}
 }
