@@ -1,5 +1,4 @@
-<section class="relative pt-24 md:pt-48 mb-20 md:mb-56 overflow-hidden | section background-stripe" data-bg-color="bg-blue" id="about">
-  <!--<img class="dark-circle | lazyImg" data-src="{{ site.base_url }}{{ section.image_url }}"/>-->
+<section class="relative pt-24 md:pt-48 mb-20 md:mb-56 overflow-hidden | section background-stripe" data-bg-color="bg-purple" id="about">
   <div class="container">
     <div class="row">
       <div class="col w-full mb-20 md:mb-32">
@@ -10,7 +9,7 @@
     </div>
     <div class="row">
       <div class="col w-full z-20">
-        <div class="bg-blue rounded-xl border-solid border-offWhite border-4 shadow-2xl flex flex-col lg:flex-row | about-box js-fadeIn">
+        <div class="bg-purple rounded-xl border-solid border-offWhite border-4 shadow-2xl flex flex-col lg:flex-row | about-box js-fadeIn">
           <div class="w-full lg:w-7/12 pt-10 px-10 sm:pt-16 sm:px-16">
             {% assign abouts = site.abouts | sort: 'order' %}
             {% for about in abouts %}
@@ -22,7 +21,35 @@
             {% endfor %}
           </div>
           <div class="lg:w-5/12 border-t-4 lg:border-t-0 lg:border-l-4 pt-10 px-10 sm:pt-16 sm:px-16">
-            <p>hello</p>
+            <div class="skills-list">
+              <div class="skills-list__category">
+                <h4 class="h3">Core Languages</h4>
+                <p>HTML</p>
+                <p>SCSS/CSS</p>
+                <p>JavaScript ES6</p>
+              </div>
+              <div class="skills-list__category">
+                <h4 class="h3">Additionally</h4>
+                <p>Git</p>
+                <p>TailwindCSS</p>
+                <p>BEM Method</p>
+                <p>React</p>
+                <p>APIs</p>
+                <p>Jira</p>
+                <p>Agile working</p>
+                <p>Gulp</p>
+                <p>Jekyll/Liquid</p>
+                <p>WordPress/ACF/PHP</p>
+                <p>Drupal/Twig</p>
+              </div>
+              <div class="skills-list__category">
+                <h4 class="h3">I'm currently learning...</h4>
+                <p>🎨 how to render 2D graphics in the browser using P5.js.</p>
+                <p>💎 the basics of Ruby on Rails.</p>
+                <p>✏️ branding and UI design via the SuperHi Visual Design and Branding course.</p>
+                <p>🛍️ how to create modern e-commerce sites using the Shopify platform.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
