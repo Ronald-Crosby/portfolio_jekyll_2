@@ -2,7 +2,16 @@
   <div class="container relative z-20">
     <div class="row">
       <div class="col w-full lg:w-7/12 xl:w-7/12 lg:flex lg:flex-col lg:justify-center">
-        <p class="h1 mb-12 | hero-h1 js-fadeIn">Hi, I'm Olly</p>
+        <div class="row">
+          <div class="col w-8/12 flex items-center lg:w-full">
+            <p class="h1 | hero-h1 js-fadeIn">Hi, I'm Olly</p>
+          </div>
+          <div class="col w-4/12 -ml-1/12 flex items-center lg:hidden">
+            <div class="relative w-full | hero-illustration">
+              <img class="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" src="{{ site.baseurl }}{{ section.image_url }}"/>
+            </div>
+          </div>
+        </div>
         <div class="hero-text md:pr-40">
           <p class="js-fadeIn">{{ section.content }}</p>
           <p class="py-2 px-4 bg-offWhite text-purple | js-fadeIn">{{ section.highlighted_message }}</p>
@@ -11,7 +20,7 @@
           <a href="{{ section.button_url }}" class="button button-hoverEffect" target="_blank">{{ section.button_label }}</a>
         </div>
       </div>
-      <div class="col w-full lg:w-5/12 xl:w-5/12">
+      <div class="col hidden lg:block lg:w-5/12 xl:w-4/12">
         <div class="relative | hero-illustration">
           <img class="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" src="{{ site.baseurl }}{{ section.image_url }}"/>
         </div>
