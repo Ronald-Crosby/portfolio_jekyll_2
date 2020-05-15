@@ -8,8 +8,8 @@
   }
 }
 
-.hero-text * + * {
-  margin-top: 1.2rem;
+.hero-text p {
+  margin-top: 2rem;
 }
 
 .hero-illustration {
