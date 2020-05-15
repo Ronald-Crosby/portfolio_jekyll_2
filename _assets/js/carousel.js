@@ -4,4 +4,5 @@ var flkty = new Flickity(elem, {
   percentPosition: true,
   prevNextButtons: false,
   pageDots: false,
+  freeScroll: true,
 })
