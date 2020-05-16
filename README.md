@@ -1,4 +1,6 @@
-### This site uses Jekyll Starter Tailwind as a base, follow the instruction below under 'Get Started' to set up the site locally.
+# Welcome to ollyrobinson.dev
+
+## This site uses Jekyll Starter Tailwind as a base, follow the instruction below under 'Get Started' to set up the site locally.
 
 # Jekyll Starter Tailwind
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
