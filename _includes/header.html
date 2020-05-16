@@ -1,4 +1,5 @@
-<header class="w-full fixed top-0 left-0 right-0 z-30 border-b-2 border-offWhite bg-purple overflow-hidden | globalHeader">
+<header
+        class="w-full fixed top-0 left-0 right-0 z-30 border-b-2 border-offWhite bg-purple overflow-hidden | globalHeader">
   <div class="container">
     <div class="row">
       <div class="col w-full flex justify-between items-center w-full py-8 | headerCol">
@@ -13,11 +14,12 @@
             {% for link in navLinks %}
             {% if link.showNav %}
             <li class="hidden lg:inline px-4 lg:px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="{{ link.machineName }}" href="#{{ link.machineName }}">{{ link.title }}</a>
+              <a class="button button-hoverEffect button--invert" data-id="{{ link.machineName }}"
+                 href="#{{ link.machineName }}">{{ link.title }}</a>
             </li>
             {% endif %}
             {% endfor %}
-            <li class="hidden md:inline px-8 | js-fadeIn">
+            <li class="px-8 | js-fadeIn">
               <a class="button button-hoverEffect button--invert" data-id="contact" href="#contact">Get in touch</a>
             </li>
           </ul>
