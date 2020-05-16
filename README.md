@@ -1,6 +1,6 @@
 # Welcome to ollyrobinson.dev
 
-### This site uses Jekyll Starter Tailwind as a base, follow the instruction below under 'Get Started' to set up the site locally.
+### This site uses Jekyll Starter Tailwind as a base, follow the instruction below under 'Get Started' to run the site locally.
 
 
 
