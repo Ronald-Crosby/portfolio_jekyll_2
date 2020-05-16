@@ -1,3 +1,5 @@
+### This site uses Jekyll Starter Tailwind as a base, follow the instruction below under 'Get Started' to set up the site locally.
+
 # Jekyll Starter Tailwind
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
@@ -35,7 +37,6 @@ A starter kit for using [Tailwind](https://tailwindcss.com) with [Jekyll](https:
 ## Build your site
 * `npm run build:dev` to compile the site with development settings
 * `npm run build:production` or `npm run build` to compile the site for production
-
 
 ## Deploy
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/jekyll-starter-tailwind)
