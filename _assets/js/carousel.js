@@ -3,6 +3,6 @@ var flkty = new Flickity(elem, {
   contain: false,
   percentPosition: true,
   prevNextButtons: false,
-  pageDots: false,
+  pageDots: true,
   freeScroll: true,
 })

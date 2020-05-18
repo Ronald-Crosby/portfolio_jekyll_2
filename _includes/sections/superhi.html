@@ -1,4 +1,4 @@
-<section class="pt-24 md:pt-48 md:pb-24 | section" data-bg-color="bg-grey" data-sectionname="superhi" id="superhi">
+<section class="pt-24 md:pt-48 pb-24 | section" data-bg-color="bg-grey" data-sectionname="superhi" id="superhi">
   <div class="container">
     <div class="row">
       <div class="col w-full xl:w-10/12 mb-20 lg:mb-32">
@@ -16,9 +16,10 @@
         <ul class="superhi-courses">
           {% assign courses = site.superhi_courses | sort: 'order' %}
           {% for course in courses %}
-            <li class="my-1">
-              <a href="https://www.superhi.com/courses/{{ course.sh_url }}" target="_blank" class="button">{{ course.title }}</a>
-            </li>
+          <li class="my-1">
+            <a href="https://www.superhi.com/courses/{{ course.sh_url }}" target="_blank"
+               class="button">{{ course.title }}</a>
+          </li>
           {% endfor %}
         </ul>
       </div>
@@ -27,19 +28,20 @@
   <div class="superhi-carousel | js-fadeIn">
     {% assign sites = site.superhi_sites %}
     {% for site in sites %}
-      <div class="carousel-cell w-9/12 sm:w-6/12 md:w-5/12 xl:w-3/12">
-        <div class="border-4 rounded-xl bg-purple overflow-hidden flex flex-col | carousel-box">
-          <div class="relative w-full h-0 bg-purple overflow-hidden" style="padding-bottom: 50%;">
-            <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="{{ site.baseurl }}{{ site.img }}"/>
-          </div>
-          <div class="p-8 flex-1 flex flex-col justify-between">
-            <h4 class="h3 mb-auto">
-              <a href="{{ site.external_url }}" target="_blank">{{ site.title }}</a>
-            </h4>
-            <p>{{ site.course }}</p>
-          </div>
+    <div class="carousel-cell w-9/12 sm:w-6/12 md:w-5/12 xl:w-3/12">
+      <div class="border-4 rounded-xl bg-purple overflow-hidden flex flex-col | carousel-box">
+        <div class="relative w-full h-0 bg-purple overflow-hidden" style="padding-bottom: 50%;">
+          <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover"
+               src="{{ site.baseurl }}{{ site.img }}" />
+        </div>
+        <div class="p-8 flex-1 flex flex-col justify-between">
+          <h4 class="h3 mb-auto">
+            <a href="{{ site.external_url }}" target="_blank">{{ site.title }}</a>
+          </h4>
+          <p>{{ site.course }}</p>
         </div>
       </div>
+    </div>
     {% endfor %}
   </div>
 </section>

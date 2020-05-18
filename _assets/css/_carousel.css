@@ -9,7 +9,19 @@
 }
 
 .carousel-box {
-  min-height: 32rem;
+  min-height: 33rem;
+}
+
+.superhi-carousel .flickity-page-dots {
+  bottom: -6rem;
+}
+
+.superhi-carousel .flickity-page-dots .dot {
+  @apply bg-pink;
+}
+
+.superhi-carousel .flickity-page-dots .dot .is-selected {
+  opacity: 1;
 }
 
 /* purgecss end ignore */
