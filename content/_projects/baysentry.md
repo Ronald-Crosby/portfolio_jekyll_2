@@ -1,7 +1,7 @@
 ---
 title: BaySentry
-reverse: false
-order: 3
+reverse: true
+order: 4
 
 img_url_mobile: /assets/img/citipark-pcn-mobile.jpg
 img_desktop_alt: Picture of the baysentry homepage on a smartphone

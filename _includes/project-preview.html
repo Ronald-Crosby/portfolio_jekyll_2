@@ -1,6 +1,6 @@
 <div class="{% if project.reverse %}md:flex-row-reverse {% else %}md:flex-row {% endif %}flex-col-reverse row mt-32 md:mt-80">
   <div class="col w-full md:w-3/12 xl:w-2/12 z-10 mb-16 mt-12 lg:mt-0 {% if.project.reverse %}text-right {% endif %}">
-    <h3 class="h3 mb-6 break-words | js-fadeIn">
+    <h3 class="h3 mb-6 leading-tight break-words | js-fadeIn">
       {{ project.title }}
     </h3>
     <a class="button button-hoverEffect | js-fadeIn" href="{{ project.live_url }}" target="_blank">
@@ -8,12 +8,12 @@
     </a>
   </div>
   <div class="col hidden lg:block lg:w-3/12 md:-mt-16 z-10 | js-fadeIn">
-    <div class="relative w-full overflow-hidden border-4 border-offWhite rounded-xl shadow-2xl bg-grey | js-parallax parallax-scroll" data-parallax="-0.15" style="padding-top:217.1581769437%;">
+    <div class="relative w-full overflow-hidden border-4 border-offWhite bg-offWhite rounded-xl shadow-2xl bg-grey | js-parallax parallax-scroll" data-parallax="-0.15" style="padding-top:217.1581769437%;">
       <img alt="" class="inset-0 absolute w-full h-full object-cover | lazyImg" data-src="{{ site.baseurl }}{{ project.img_url_mobile }}">
     </div>
   </div>
   <div class="col w-full md:w-9/12 lg:w-7/12 {% if project.reverse %}lg:-mr-1/12{% else %}lg:-ml-1/12{% endif %} | js-fadeIn">
-    <div class="relative w-full overflow-hidden border-4 border-offWhite rounded-xl shadow-2xl bg-grey | js-parallax parallax-scroll" data-parallax="-0.1" style="padding-top:71.0709318498%;">
+    <div class="relative w-full overflow-hidden border-4 border-offWhite bg-offWhite rounded-xl shadow-2xl bg-grey | js-parallax parallax-scroll" data-parallax="-0.1" style="padding-top:71.0709318498%;">
       <img alt="" class="inset-0 absolute w-full h-full object-cover | lazyImg" data-src="{{ site.baseurl }}{{ project.img_url_desktop }}">
     </div>
   </div>
