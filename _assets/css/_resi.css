@@ -1,0 +1,5 @@
+.divider {
+	@apply border-t;
+	@apply border-offWhite;
+	@apply mb-20;
+}

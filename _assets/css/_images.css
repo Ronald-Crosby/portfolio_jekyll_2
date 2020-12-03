@@ -18,5 +18,8 @@
 
 .resi-desktop-image {
 	padding-top: 49.75%;
+}
+
+.resi-mobile-image, .resi-desktop-image {
 	@apply rounded-md;
 }

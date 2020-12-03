@@ -3,7 +3,7 @@ layout: project
 title: Resi
 ---
 
-<section class="section mb-16" style="padding-top: 100px;" data-bg-color="bg-purple">
+<section class="mb-16" style="padding-top: 100px;" data-bg-color="bg-purple">
 	<div class="container">
     <div class="row">
 			<div class="col w-full">
@@ -23,24 +23,89 @@ title: Resi
 	</div>
 </section>
 
-<section class="section" data-bg-color="bg-purple">
+<section data-bg-color="bg-purple">
 	<div class="container">
     <div class="row">
+			{% include divider.html %}
 			<div class="col w-full">
 				<h2 class="h3 mb-2">Resi Architectionary</h2>
 				<p class="max-ch">There is a lot of jargon in the design and planning process that will be unfamiliar unless someone has completed a similar project before. I collaborated with the marketing team to produce the Resi Architectionary, a searchable glossary of the most common terms our customers might come across during their time with us.</p>
 			</div>
 		</div>
 		<div class="row mt-12">
-			<div class="col w-full md:w-6/12">
+			<div class="col w-full lg:w-6/12 mb-6 lg:mb-0">
 				<div class="aspect-ratio-box w-full resi-desktop-image">
 					<img class="img" src="{{ site.baseurl }}/assets/img/architectionary.jpg"/>
 				</div>
 			</div>
-			<div class="col w-full md:w-6/12">
+			<div class="col w-full lg:w-6/12">
 				<div class="aspect-ratio-box w-full resi-desktop-image">
 					<img class="img" src="{{ site.baseurl }}/assets/img/architectionary-modal.jpg"/>
-				</div></div>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-10">
+			<div class="col w-full">
+				<div class="mb-10">
+					<h3 class="h4 mb-2">
+						Design
+					</h3>
+					<p class="max-ch">
+						I found the clearest way to present the information was to arrange the entries as clickable cards. Each card triggers a small modal revealing the full definition. When the user arrives at the page all the entries are visible so users can browser or search as they prefer.
+					</p>
+				</div>
+				<div class="">
+					<h3 class="h4 mb-2">
+						Development
+					</h3>
+					<p class="max-ch">
+						I collaborated with our Rails engineers to create a page that’s managed using Contentful CMS, allowing the marketing team to add and update entries independently.
+					</p>
+					<p class="max-ch mt-2">
+						CSS Grid allowed me to generate an implicitly responsive layout rather than rely on explicit breakpoints.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			{% include divider.html %}
+			<div class="col w-full md:w-6/12">
+				<h2 class="h3 mb-2">Happy Homes podcast page</h2>
+				<p class="max-ch">In August we launched a short podcast series called Happy Homes and I built the landing page for our marketing website. A challenge here was implementing the playful, floating-image hero section without relying on a ‘magic numbers’ solution. I used our 12-column grid and negative margins to position and responsively scale the svg illustrations.</p>
+			</div>
+			<div class="col w-full md:w-6/12">
+				<div class="aspect-ratio-box w-full resi-desktop-image">
+					<img class="img" src="{{ site.baseurl }}/assets/img/happy-homes.jpg" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			{% include divider.html %}
+			<div class="col w-full md:w-6/12">
+				<h2 class="h3 mb-2">Instagram ads landing page</h2>
+				<p class="max-ch mb-2">Previously, Instagram adverts had linked to our Quick Quote tool (see section below) but the completion rate of this tool was very low. We found that potential customers clicked on an ad showing them beautiful, modern home renovations and were disapointed when they were shown a form asking for information about their home that was missing context about who Resi are and the services we provide.</p>
+				<p class="max-ch">To remedy this, I designed a landing page that was centred about more beautiful images of our work and gave the customer more information about the services we offer before recommending them get a Quick Quote or book themselves a call with our sales team.</p>
+			</div>
+			<div class="col w-6/12 md:w-3/12">
+				<div class="aspect-ratio-box w-full resi-mobile-image" style="padding-bottom: 228%;">
+					<img class="img" src="{{ site.baseurl }}/assets/img/landing-1.jpg"/>
+				</div>
+			</div>
+			<div class="col w-6/12 md:w-3/12">
+				<div class="aspect-ratio-box w-full resi-mobile-image" style="padding-bottom: 228%;">
+					<img class="img" src="{{ site.baseurl }}/assets/img/landing-2.jpg"/>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

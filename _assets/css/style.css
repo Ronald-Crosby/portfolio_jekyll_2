@@ -9,6 +9,7 @@
 @import './_about.css';
 @import './_carousel.css';
 @import './_images.css';
+@import './_resi.css';
 
 html {
   scroll-behavior: smooth;
