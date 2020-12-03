@@ -8,22 +8,24 @@
             Olly Robinson
           </h1>
         </a>
-        <nav class="header-nav">
-          <ul class="flex">
-            {% assign navLinks = site.sections | sort: 'order' %}
-            {% for link in navLinks %}
-            {% if link.showNav %}
-            <li class="hidden lg:inline px-4 lg:px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="{{ link.machineName }}"
-                 href="#{{ link.machineName }}">{{ link.title }}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
-            <li class="px-8 | js-fadeIn">
-              <a class="button button-hoverEffect button--invert" data-id="contact" href="#contact">Get in touch</a>
-            </li>
-          </ul>
-        </nav>
+        {% if show_nav == true %}
+          <nav class="header-nav">
+            <ul class="flex">
+              {% assign navLinks = site.sections | sort: 'order' %}
+              {% for link in navLinks %}
+              {% if link.showNav %}
+              <li class="hidden lg:inline px-4 lg:px-8 | js-fadeIn">
+                <a class="button button-hoverEffect button--invert" data-id="{{ link.machineName }}"
+                  href="#{{ link.machineName }}">{{ link.title }}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+              <li class="px-8 | js-fadeIn">
+                <a class="button button-hoverEffect button--invert" data-id="contact" href="#contact">Get in touch</a>
+              </li>
+            </ul>
+          </nav>
+        {% endif %}
       </div>
     </div>
   </div>

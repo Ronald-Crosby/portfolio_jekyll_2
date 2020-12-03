@@ -3,10 +3,10 @@
   {% include head.html %}
 
   <body class="antialiased bg-grey relative">
+    {% assign show_nav = true %}
     {% include header.html %}
 
     <main class="" id="mainTag">
-      {% include loader.html %}
       <div class="" id="background"></div>
       {{ content }}
     </main>
