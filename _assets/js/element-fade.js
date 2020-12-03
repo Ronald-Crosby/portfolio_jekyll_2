@@ -31,10 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	document.addEventListener('scroll', () => {
 		fadeIn()
-		console.log('scrolled')
 	})
 	window.addEventListener('resize', () => {
 		fadeIn()
-		console.log('resize')
 	})
 })

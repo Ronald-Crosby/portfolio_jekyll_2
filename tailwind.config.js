@@ -16,6 +16,7 @@ module.exports = {
       offWhite: '#F7EDF1'
     },
     borderRadius: {
+      md: '0.5rem',
       xl: '1rem',
     },
     fontSize: {

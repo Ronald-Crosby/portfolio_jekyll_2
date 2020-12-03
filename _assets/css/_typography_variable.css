@@ -73,3 +73,7 @@ body {
 .button {
 	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 500, 'slnt' 0, 'ital' 1;
 }
+
+.max-ch {
+	max-width: 60ch;
+}
