@@ -81,3 +81,7 @@ body {
 .max-ch {
 	max-width: 60ch;
 }
+
+.resi-page p {
+	font-size: 1.6rem;
+}
