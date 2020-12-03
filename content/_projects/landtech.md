@@ -1,7 +1,7 @@
 ---
 title: LandTech
 reverse: false
-order: 3
+order: 4
 
 img_url_mobile: /assets/img/landtech-mobile.jpg
 img_desktop_alt: Picture of the landtech.com homepage on a smartphone
