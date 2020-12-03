@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	setTimeout(() => {
 		loader.classList.add('loader-hidden')
-	}, 3000)
+	}, 2000)
 })
