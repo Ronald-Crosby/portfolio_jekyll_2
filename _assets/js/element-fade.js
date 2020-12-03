@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	setTimeout(() => {
 		fadeIn()
-	}, 3000);
+	}, 500);
 
 	document.addEventListener('scroll', () => {
 		fadeIn()
