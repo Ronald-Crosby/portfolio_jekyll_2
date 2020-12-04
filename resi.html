@@ -1,0 +1,179 @@
+---
+layout: project
+title: Resi
+---
+<div class="resi-page">
+
+	<section class="mb-16" style="padding-top: 100px;" data-bg-color="bg-purple">
+		<div class="container">
+			<div class="row">
+				<div class="col w-full">
+					<div class="md:mt-20 mb-16">
+						<a href="{{ site.baseurl }}/" class="button button-hoverEffect"> < Back</a>
+					</div>
+					<h1 class="h1">{{ page.title }}</h1>
+					<div class="flex flex-col md:flex-row justify-between my-6">
+						<h3 class="h3">Junior front-end developer and UI/UX designer</h3>
+						<h3 class="h3 text-left md:text-right">June 2020 - present</h3>
+					</div>
+				</div>
+				<div class="col w-full">
+					<p class="max-ch">Resi is an architecture full-service home rennovation startup based in Brixton, London. I joined in 2020 in a hybrid design and front-end development role within their product team. Below is a collection of my work for Resi since June 2020.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section data-bg-color="bg-purple" class="mb-32">
+		<div class="container">
+			<div class="row">
+				{% include divider.html %}
+				<div class="col w-full">
+					<h2 class="h3 mb-2">Resi Architectionary</h2>
+					<p class="max-ch">There is a lot of jargon in the design and planning process that will be unfamiliar unless someone has completed a similar project before. I collaborated with the marketing team to produce the Resi Architectionary, a searchable glossary of the most common terms our customers might come across during their time with us.</p>
+				</div>
+			</div>
+			<div class="row mt-12">
+				<div class="col w-full lg:w-6/12 mb-6 lg:mb-0">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/architectionary.jpg"/>
+					</div>
+				</div>
+				<div class="col w-full lg:w-6/12">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/architectionary-modal.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-10">
+				<div class="col w-full">
+					<div class="mb-10">
+						<h3 class="h4 mb-2">
+							Design
+						</h3>
+						<p class="max-ch">
+							I found the clearest way to present the information was to arrange the entries as clickable cards. Each card triggers a small modal revealing the full definition. When the user arrives at the page all the entries are visible so users can browser or search as they prefer.
+						</p>
+					</div>
+					<div class="">
+						<h3 class="h4 mb-2">
+							Development
+						</h3>
+						<p class="max-ch">
+							I collaborated with our Rails engineers to create a page that’s managed using Contentful CMS, allowing the marketing team to add and update entries independently.
+						</p>
+						<p class="max-ch mt-2">
+							CSS Grid allowed me to generate an implicitly responsive layout rather than rely on explicit breakpoints.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% capture happy_homes_content %}
+		<p class="max-ch">In August we launched a short podcast series called Happy Homes and I built the landing page for our marketing website. A challenge here was implementing the playful, floating-image hero section without relying on a ‘magic numbers’ solution. I used our 12-column grid and negative margins to position and responsively scale the svg illustrations.</p>
+	{% endcapture %}
+	{% include text-image.html title="Happy Homes podcast page" content=happy_homes_content image="happy-homes" %}
+
+	<section data-bg-color="bg-purple" class="mb-32">
+		<div class="container">
+			<div class="row">
+				{% include divider.html %}
+				<div class="col w-full lg:w-6/12">
+					<h2 class="h3 mb-2">Instagram ads landing page</h2>
+					<p class="max-ch mb-2">Previously, Instagram adverts had linked to our Quick Quote tool (see section below) but the completion rate of this tool was very low. We found that potential customers clicked on an ad showing them beautiful, modern home renovations and were disapointed when they were shown a form asking for information about their home that was missing context about who Resi are and the services we provide.</p>
+					<p class="max-ch">To remedy this, I designed a landing page that was centred about more beautiful images of our work and gave the customer more information about the services we offer before recommending them get a Quick Quote or book themselves a call with our sales team.</p>
+				</div>
+				<div class="col w-full lg:w-6/12 mt-12 md:mt-0">
+					<div class="row">
+						<div class="col w-6/12">
+							<div class="aspect-ratio-box w-full resi-mobile-image" style="padding-bottom: 228%;">
+								<img class="img" src="{{ site.baseurl }}/assets/img/landing-1.jpg"/>
+							</div>
+						</div>
+						<div class="col w-6/12">
+							<div class="aspect-ratio-box w-full resi-mobile-image" style="padding-bottom: 228%;">
+								<img class="img" src="{{ site.baseurl }}/assets/img/landing-2.jpg"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% capture crm_messaging_content %}
+		<p class="max-ch">I was tasked with redesigning the admin messaging system as it became apparent that the existing interface was no longer fit for purpose. Over time, many features had been added to the page without questioning the overall structure.</p>
+		<p class="max-ch mt-2">This design applied our new visual language defined in the customer dashboard and began to apply it to the custom Resi CRM.We elected not to redesign the 3rd party message composition tool so that we could get the new interface out to our team sooner.</p>
+	{% endcapture %}
+
+	{% include text-image.html title="Resi CRM messaging app" content=crm_messaging_content image="admin-messaging" %}
+
+	<section data-bg-color="bg-purple" class="mb-32">
+		<div class="container">
+			<div class="row">
+				{% include divider.html %}
+				<div class="col w-full">
+					<h2 class="h3 mb-2">Customer dashboard - marketing and data capture tools</h2>
+					<p class="max-ch">At the core of Resi’s offering is the customer dashboard. It allows customers to manage their project, communicate with their designer and store all the necessary files needed for planning submission and hand over to contractors on site.</p>
+					<p class="max-ch mt-2">I worked on a suite of tools that returned useful information for a potential customer and captured relevant data for our sales team.</p>
+				</div>
+			</div>
+			<div class="row mt-12">
+				<div class="col w-full lg:w-6/12 mb-6 lg:mb-0">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/quick-quote-form.jpg"/>
+					</div>
+				</div>
+				<div class="col w-full lg:w-6/12">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/quick-quote-results.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-10">
+				<div class="col w-full">
+					<div class="mb-10">
+						<h3 class="h4 mb-2">
+							Design
+						</h3>
+						<p class="max-ch">In order to rapidly develop new form components across the customer dashboard, I created a set of template components in Figma. These could be duplicated and customised to suit the required context.</p>
+						<p class="max-ch mt-2">We launched an MVP to a test group of customers, solicited their feedback and reshaped the dashboard’s forms for a more navigable experience.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-12">
+				<div class="col w-full lg:w-6/12 mb-6 lg:mb-0">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/finance-form.jpg"/>
+					</div>
+				</div>
+				<div class="col w-full lg:w-6/12">
+					<div class="aspect-ratio-box w-full resi-desktop-image">
+						<img class="img" src="{{ site.baseurl }}/assets/img/advice-call-form.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-10">
+				<div class="col w-full">
+					<div class="">
+						<h3 class="h4 mb-2">
+							Development
+						</h3>
+						<p class="max-ch">Prior to my involvement, the front-end development at Resi was implemented by backend engineers, so I was able to bring my front-end specialism, plus an eye for design, to their process.</p>
+						<p class="max-ch mt-2">Among other accessibility wins, I built all of the new form components so that users can tab through, fill out and submit the forms using just their keyboard.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% capture messaging_content %}
+		<p class="max-ch">I applied message styling defined during the admin messaging redesign to create a new customer messaging interface.</p>
+		<p class="max-ch mt-2">Previously, messages had been in a 1/4 width modal sidebar that was ill-suited to longer messages with many file uploads.</p>
+		<p class="max-ch mt-2">To remedy a common pain point of users feeling they are passed around too many representatives, this interface includes a breakdown of the different Resi team members in the conversation.</p>
+	{% endcapture %}
+	{% include text-image.html title="Customer dashboard - messaging page" content=messaging_content image="customer-messaging" %}
+
+</div>

@@ -70,6 +70,18 @@ body {
 	@apply text-offWhite;
 }
 
+.h4 {
+	font-weight: 700;
+}
+
 .button {
 	font-variation-settings: 'MONO' 0.25, 'CASL' 0.25, 'wght' 500, 'slnt' 0, 'ital' 1;
+}
+
+.max-ch {
+	max-width: 60ch;
+}
+
+.resi-page p {
+	font-size: 1.6rem;
 }

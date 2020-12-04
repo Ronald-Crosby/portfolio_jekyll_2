@@ -1,7 +1,16 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-<p>{{ page.title }}</p>
+  <body class="antialiased bg-grey relative">
+		{% assign show_nav = false %}
+    {% include header.html %}
 
-{{ content }}
+    <main class="" id="mainTag">
+      <div class="" id="background"></div>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
