@@ -71,22 +71,10 @@ title: Resi
 		</div>
 	</section>
 
-	<section data-bg-color="bg-purple" class="mb-32">
-		<div class="container">
-			<div class="row">
-				{% include divider.html %}
-				<div class="col w-full lg:w-6/12">
-					<h2 class="h3 mb-2">Happy Homes podcast page</h2>
-					<p class="max-ch">In August we launched a short podcast series called Happy Homes and I built the landing page for our marketing website. A challenge here was implementing the playful, floating-image hero section without relying on a ‘magic numbers’ solution. I used our 12-column grid and negative margins to position and responsively scale the svg illustrations.</p>
-				</div>
-				<div class="col w-full lg:w-6/12 mt-10 lg:mt-0">
-					<div class="aspect-ratio-box w-full resi-desktop-image">
-						<img class="img" src="{{ site.baseurl }}/assets/img/happy-homes.jpg" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% capture happy_homes_content %}
+		<p class="max-ch">In August we launched a short podcast series called Happy Homes and I built the landing page for our marketing website. A challenge here was implementing the playful, floating-image hero section without relying on a ‘magic numbers’ solution. I used our 12-column grid and negative margins to position and responsively scale the svg illustrations.</p>
+	{% endcapture %}
+	{% include text-image.html title="Happy Homes podcast page" content=happy_homes_content image="happy-homes" %}
 
 	<section data-bg-color="bg-purple" class="mb-32">
 		<div class="container">
@@ -115,23 +103,12 @@ title: Resi
 		</div>
 	</section>
 
-	<section data-bg-color="bg-purple" class="mb-32">
-		<div class="container">
-			<div class="row">
-				{% include divider.html %}
-				<div class="col w-full lg:w-6/12">
-					<h2 class="h3 mb-2">Resi CRM messaging app</h2>
-					<p class="max-ch">I was tasked with redesigning the admin messaging system as it became apparent that the existing interface was no longer fit for purpose. Over time, many features had been added to the page without questioning the overall structure.</p>
-					<p class="max-ch mt-2">This design applied our new visual language defined in the customer dashboard and began to apply it to the custom Resi CRM.We elected not to redesign the 3rd party message composition tool so that we could get the new interface out to our team sooner.</p>
-				</div>
-				<div class="col w-full lg:w-6/12 mt-10 lg:mt-0">
-					<div class="aspect-ratio-box w-full resi-desktop-image">
-						<img class="img" src="{{ site.baseurl }}/assets/img/admin-messaging.jpg" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% capture crm_messaging_content %}
+		<p class="max-ch">I was tasked with redesigning the admin messaging system as it became apparent that the existing interface was no longer fit for purpose. Over time, many features had been added to the page without questioning the overall structure.</p>
+		<p class="max-ch mt-2">This design applied our new visual language defined in the customer dashboard and began to apply it to the custom Resi CRM.We elected not to redesign the 3rd party message composition tool so that we could get the new interface out to our team sooner.</p>
+	{% endcapture %}
+
+	{% include text-image.html title="Resi CRM messaging app" content=crm_messaging_content image="admin-messaging" %}
 
 	<section data-bg-color="bg-purple" class="mb-32">
 		<div class="container">
@@ -184,7 +161,7 @@ title: Resi
 						<h3 class="h4 mb-2">
 							Development
 						</h3>
-						<p class="max-ch">Prior to my involvement, the front-end development at Resi was implemented by backend engineers, so I was able to bring my front-end specialism, as well as eye for design, to their process.</p>
+						<p class="max-ch">Prior to my involvement, the front-end development at Resi was implemented by backend engineers, so I was able to bring my front-end specialism, plus an eye for design, to their process.</p>
 						<p class="max-ch mt-2">Among other accessibility wins, I built all of the new form components so that users can tab through, fill out and submit the forms using just their keyboard.</p>
 					</div>
 				</div>
@@ -192,23 +169,11 @@ title: Resi
 		</div>
 	</section>
 
-	<section data-bg-color="bg-purple" class="mb-40">
-		<div class="container">
-			<div class="row">
-				{% include divider.html %}
-				<div class="col w-full lg:w-6/12">
-					<h2 class="h3 mb-2">Customer dashboard - messaging page</h2>
-					<p class="max-ch">I applied message styling defined during the admin messaging redesign to efficiently create a new customer messaging interface.</p>
-					<p class="max-ch mt-2">Previously the messaging had been in a 1/4 width modal that was ill-suited to longer messages with many file uploads.</p>
-					<p class="max-ch mt-2">This interface includes a breakdown of the different Resi team members in the conversation, to remedy a common pain point of users feeling they are passed around too many representatives.</p>
-				</div>
-				<div class="col w-full lg:w-6/12 mt-10 lg:mt-0">
-					<div class="aspect-ratio-box w-full resi-desktop-image">
-						<img class="img" src="{{ site.baseurl }}/assets/img/customer-messaging.jpg" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% capture messaging_content %}
+		<p class="max-ch">I applied message styling defined during the admin messaging redesign to create a new customer messaging interface.</p>
+		<p class="max-ch mt-2">Previously, messages had been in a 1/4 width modal sidebar that was ill-suited to longer messages with many file uploads.</p>
+		<p class="max-ch mt-2">To remedy a common pain point of users feeling they are passed around too many representatives, this interface includes a breakdown of the different Resi team members in the conversation.</p>
+	{% endcapture %}
+	{% include text-image.html title="Customer dashboard - messaging page" content=messaging_content image="customer-messaging" %}
 
 </div>
